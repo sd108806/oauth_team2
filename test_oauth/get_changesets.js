@@ -1,7 +1,14 @@
 
 
-function get_changesets(input_path, start_input,limit,consumer_key_input,consumer_secrete_input)
+function get_changesets(input_path, start_input,limit_input,consumer_key_input,consumer_secrete_input)
 {
+
+var limit=50;   //default value
+if(limit_input!="")
+limit=limit_input;
+
+
+
 var consumer_key="";
 var consumer_secrete="";
 
