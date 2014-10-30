@@ -4,7 +4,7 @@ function get_changesets(input_path, start_input,limit_input,consumer_key_input,c
 {
 
 var limit=50;   //default value
-if(limit_input!="")
+if(limit_input!=""   &&  limit_input>0   && limit_input<50)
 limit=limit_input;
 
 
